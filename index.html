@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Interactive presentation about Open Spaces facilitation methodology, principles, and best practices for conferences and workshops">
+        <meta name="author" content="JJ Asghar">
+
+        <title>Vibe Coding Ignite</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/white.css">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+        
+        <!-- Custom styles for logo triangle -->
+        <style>
+            .logo-triangle {
+                position: relative;
+                width: 400px;
+                height: 350px;
+                margin: 0 auto;
+            }
+            
+            .logo-triangle .logo {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                background: white;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .logo-triangle .logo:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            }
+            
+            .logo-triangle .logo img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            
+            /* Triangle positioning */
+            .logo-triangle .copilot {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .logo-triangle .cursor {
+                bottom: 0;
+                left: 0;
+            }
+            
+            .logo-triangle .claude {
+                bottom: 0;
+                right: 0;
+            }
+            
+            /* Triangle connection lines */
+            .logo-triangle::before,
+            .logo-triangle::after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                background: linear-gradient(45deg, #007acc, #ff6b6b);
+                z-index: -1;
+            }
+            
+            .logo-triangle::before {
+                height: 200px;
+                top: 80px;
+                left: 120px;
+                transform: rotate(30deg);
+            }
+            
+            .logo-triangle::after {
+                height: 200px;
+                top: 80px;
+                right: 120px;
+                transform: rotate(-30deg);
+            }
+            
+            .triangle-base {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                right: 40px;
+                height: 2px;
+                background: linear-gradient(90deg, #007acc, #ff6b6b);
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    # Vibecoding 
+
+                    Aw, crap the interns can take my job now.
+                </section>
+                <section>
+                     So what is vibecoding?
+                </section>
+                <section>
+                    <h2>The AI Coding Triangle</h2>
+                    <div class="logo-triangle">
+                        <div class="logo copilot">
+                            <img src="https://github.githubassets.com/images/modules/site/copilot/copilot.png" alt="GitHub Copilot">
+                        </div>
+                        <div class="logo cursor">
+                            <img src="https://www.cursor.com/brand/icon.svg" alt="Cursor">
+                        </div>
+                        <div class="logo claude">
+                            <img src="https://claude.ai/images/claude_app_icon.png" alt="Claude">
+                        </div>
+                        <div class="triangle-base"></div>
+                    </div>
+                    <p><small>The trinity of modern AI-assisted development</small></p>
+                </section>
+                <section>
+                        <img src="https://static.asgharlabs.io/x-vibecoding.jpeg">
+                </section>
+                <section>
+                    <p>Wait, what?</p>
+                   <blockquote>
+                   If an LLM wrote every line of your code, but you've reviewed, tested, and understood it all, that's not vibe coding in my book—that's using an LLM as a typing assistant. - Simon Willison
+                   </blockquote>
+                   Let's not pull any punches, as of right now this is what people are doing.
+                </section>
+
+                <section>
+                    <img src="https://c8.alamy.com/comp/EMEHDN/india-map-flag-EMEHDN.jpg" alt="India" style="width: 50%; height: 50%;">
+                    <p><small>Remember when we used to send requirements to offshore developers?</small></p>
+                </section>
+                <section>
+                    <img src="https://y.yarn.co/f4cc0a91-47a7-4807-be8f-6ce178f9a510_text.gif" style="width: 125%; height: 125%;">
+                    <p><small>We're creating a generation of product managers that can't write code.</small></p>
+                </section>
+                <section>
+                    <img src="https://imgs.xkcd.com/comics/ai_research.png" alt="AI Research Climate Impact" style="width: 30%; height: 30%;">
+                    <p><small>"Every time you ask ChatGPT to write a poem, a polar bear loses its ice cube"</small>
+                    <small>- Claude-4-Sonnet-MAX</small></p>
+                </section>
+                <section>
+                    <img src="https://static.asgharlabs.io/a2l6pf.gif" style="width: 175%; height: 175%;">
+                </section>
+                <section>
+                    <h2>But wait!</h2> 
+                    <p>There has to be postives right?</p>
+                </section>
+                <section>
+                    <img src="https://static.asgharlabs.io/ai-code.jpeg">
+                </section>
+                <section>
+                    There has to be something positive about blindly trusting AI to write our code right?
+                </section>
+                <section>
+                    <img src="https://static.asgharlabs.io/vibecoding.png" style="width: 75%; height: 75%;">
+                </section>
+                <section>
+                    Ok, hang on. Let's take a step back.
+                </section>
+                <section>
+                    This can work, I'm terrible at building code at the beginning.
+                </section>
+                <section>
+                    That's it! You should use AI to start a project. 
+                    <br>
+                    Have it build the initial codebase.
+                </section>
+                <section>
+                     <blockquote>
+                        Write a Flask application that leverages Bootstrap to create a survey application. I would like to have a name, email, 5 questions with a slider from 1 to 10, and a comment box. I need an admin page to provide an overview so I can review the information. I require this to work within a Docker container, allowing for deployment to OpenShift. Please use the minimum number of modules to minimize dependencies.
+                    </blockquote>
+                </section>
+                <section>
+                    This application would take me a day or two to build.
+                    <br>
+                    But with that prompt I can have it done in less than 15 minutes.
+                </section>
+                <section>
+                    And this is where the "vibe" comes in.
+                    <br>
+                    I take this inital codebase and talk it out to the best v1 it can be, then we iterate from there without the AI.
+                </section>
+                <section data-markdown>
+                    ### Yes, I vibecoded this presentation.
+                    <small>JJ Asghar || @jjasghar || awesome@ibm.com</small>
+                    <br>
+                    <small>Thank you!</small>
+                </section>
+            </div>
+        </div>
+
+    <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                slideNumber: true,
+                                autoSlide: 15000,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
